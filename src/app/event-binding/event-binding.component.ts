@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./event-binding.component.css']
 })
 export class EventBindingComponent implements OnInit {
-  serverName = ''
+  serverName = 'tes'
   serverStatus = false
   constructor() { }
 

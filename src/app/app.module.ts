@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 import { ServersComponent } from './StringInterpolation/servers.component';
 import { PropertyBindingComponent } from './property-binding/property-binding.component';
 import { EventBindingComponent } from './event-binding/event-binding.component';
+import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
+import { AllBindingExampleComponent } from './all-binding-example/all-binding-example.component';
 
 @NgModule({
   declarations: [
@@ -14,10 +16,13 @@ import { EventBindingComponent } from './event-binding/event-binding.component';
     ServersComponent,
     PropertyBindingComponent,
     EventBindingComponent,
+    TwoWayBindingComponent,
+    AllBindingExampleComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
