@@ -1,0 +1,12 @@
+<input type="text" [(ngModel)]="serverName">
+<button (click)="onClick()">Click</button>
+
+<!-- *ngIf; else -->
+<p *ngIf="showServerName; else show">{{ serverName }}</p>
+
+<ng-template #show>
+  <p>No Server was created</p>
+</ng-template>
+
+<!-- *ngFor and ngStyle -->
+<p [ngStyle]="{backgroundColor: getColor()}" *ngFor="let item of list">Ther server {{ serverName }} is  {{ serverStatus }}</p>

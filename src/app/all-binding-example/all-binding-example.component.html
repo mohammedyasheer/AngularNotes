@@ -1,3 +1,8 @@
 <input type="text" [(ngModel)]="serverName">
 <button (click)="onClick()" [disabled]="isDisabled">Click</button><br>
 <span>Value: </span>{{ serverNameCLA }}
+
+
+<p [ngStyle]="{backgroundColor: getColour()}">Hello</p>
+
+<p>server status is {{ serverStatus }}</p>

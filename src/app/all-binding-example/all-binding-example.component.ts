@@ -9,11 +9,15 @@ export class AllBindingExampleComponent implements OnInit {
   serverName = ''
   isDisabled= true
   serverNameCLA = ''
+  serverStatus = ''
   constructor() {
 
     setTimeout( () => {
       this.isDisabled = false
     }, 2000)
+
+    this.setServerStatus();
+
   }
 
   ngOnInit(): void {
@@ -22,6 +26,16 @@ export class AllBindingExampleComponent implements OnInit {
 
   onClick() {
     this.serverNameCLA = this.serverName
+    this.serverStatus = Math.random().toString();
   }
 
+  getColour() {
+    return 'red'
+  }
+
+  setServerStatus() {
+
+  }
 }
+
+

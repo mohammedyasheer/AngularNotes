@@ -9,6 +9,7 @@ import { PropertyBindingComponent } from './property-binding/property-binding.co
 import { EventBindingComponent } from './event-binding/event-binding.component';
 import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
 import { AllBindingExampleComponent } from './all-binding-example/all-binding-example.component';
+import { DirectivesComponent } from './directives/directives.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { AllBindingExampleComponent } from './all-binding-example/all-binding-ex
     PropertyBindingComponent,
     EventBindingComponent,
     TwoWayBindingComponent,
-    AllBindingExampleComponent
+    AllBindingExampleComponent,
+    DirectivesComponent
   ],
   imports: [
     BrowserModule,
